@@ -1,0 +1,10 @@
+version: "3"
+services:
+    pyflask:
+        build:
+            dockerfile: Dockerfile
+            context: .
+        volumes:
+            - ".:/app"
+        ports:
+            - '9999:5000'
